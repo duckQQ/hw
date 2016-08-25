@@ -5,19 +5,17 @@ import javax.swing.JOptionPane;
 public class NumberEx {
 
 	public static void main(String[] args) {
-		//ä¸­æ–‡æ•¸å­—çµ„èˆ‡å–®ä½çµ„
-			String Numch[] = {"é›¶","å£¹","è²³","åƒ","è‚†","ä¼","é™¸","æŸ’","æŒ","ç–"};
-			String Nchars[] = {"å…ƒ","æ‹¾","ç™¾","åƒ","è¬","æ‹¾","ç™¾","åƒ",
-					"è¬","å„„","ç™¾","åƒ","å…†"};
+		//³]©w ¤¤¤å¼Æ¦r²Õ, ³æ¦ì²Õ
+			String Numch[] = {"¹s","³ü","¶L","°Ñ","¸v","¥î","³°","¬m","®Ã","¨h"};
+			String Nchars[] = {"¤¸","¬B","¦Ê","¤d","¸U","¬B","¦Ê","¤d","»õ","¬B"};
 			
-			String in = JOptionPane.showInputDialog("è«‹è¼¸å…¥å¤§æ–¼é›¶çš„é˜¿æ‹‰ä¼¯æ•¸å­—");
-			//è¨ˆç®—è¼¸å…¥æ•¸å­—å­—ä¸²é•·åº¦
+			String in = JOptionPane.showInputDialog("½Ğ¿é¤J¼Æ¦r");
+			//­pºâ¿é¤J¼Æ¦r¬°´X¦ì
 			int n = in.length();
 		for (int i = 0; i < n; i++) {
-			//ä»¥è¼¸å…¥å­—ä¸²é•·åº¦ä¾†è½‰æ›æ–‡å­—
-			String sub = in.substring(i, i + 1);//å°‡è¼¸å…¥æ•¸å­—æ‹†é–‹(å‹åˆ¥ç‚ºå­—ä¸²)
-			int convert = Integer.parseInt(sub);//å°‡å­—ä¸²è½‰ç‚ºæ•´æ•¸
-			//JOptionPane.showMessageDialog(null,Numch[convert]+Nchars[n-1-i]);
+			// ¨Ì·Ó¼Æ¦r¦h¤Öºâ­Ó¬B¦Ê...¦ı¬O·|±q¤¸¶}©l¦L¥X¨Ó
+			String sub = in.substring(i, i + 1);
+			int convert = Integer.parseInt(sub);
 			System.out.print(Numch[convert]+Nchars[n-1-i]);
 			
 		}		
