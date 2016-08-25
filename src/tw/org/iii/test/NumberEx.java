@@ -17,7 +17,6 @@ public class NumberEx {
 			//以輸入字串長度來轉換文字
 			String sub = in.substring(i, i + 1);//將輸入數字拆開(型別為字串)
 			int convert = Integer.parseInt(sub);//將字串轉為整數
-			//JOptionPane.showMessageDialog(null,Numch[convert]+Nchars[n-1-i]);
 			System.out.print(Numch[convert]+Nchars[n-1-i]);
 			
 		}		
