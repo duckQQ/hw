@@ -51,7 +51,7 @@ public class CopyTest{
 				System.out.println("Error in copying one file");
 			}						
 		}else {
-			
+			//create target folder and copy
 			if(!target.exists()){
 				target.mkdir();
 				System.out.println("Create target directory: " + target);
@@ -62,8 +62,7 @@ public class CopyTest{
 					File tarFile = new File(target, f1);
 					copyFile(srcFile, tarFile);
 				}
-
-				
+				//copy file to target folder
 			}else {
 				String folder_contents[] = source.list();
 				for(String f1 : folder_contents){
